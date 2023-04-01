@@ -3,6 +3,7 @@ package com.example.lista_zakupy
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
+import android.widget.RadioButton
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.chip.Chip
 
@@ -11,6 +12,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+       val dodawanie=findViewById<RadioButton>(R.id.dodawanie)
+        val odhacznie=findViewById<RadioButton>(R.id.odhaczanie)
 
        val bagietka = findViewById<Chip>(R.id.ziemniak)
         bagietka.visibility = View.GONE
@@ -34,5 +38,38 @@ class MainActivity : AppCompatActivity() {
         Kukurydza.visibility = View.GONE
         val Salata= findViewById<Chip>(R.id.salata)
         Salata.visibility = View.GONE
+
+        dodawanie.setOnClickListener(){
+        if (dodawanie.isChecked) {
+            bagietka.visibility = View.VISIBLE
+            croissant.visibility = View.VISIBLE
+            chleb.visibility = View.VISIBLE
+
+            szynka.visibility = View.VISIBLE
+            salami.visibility = View.VISIBLE
+            kielbasa.visibility = View.VISIBLE
+
+            Ziemniak.visibility = View.VISIBLE
+            Marchewka.visibility = View.VISIBLE
+            Kukurydza.visibility = View.VISIBLE
+            Salata.visibility = View.VISIBLE
+        }
+        }
+        odhacznie.setOnClickListener(){
+            if (dodawanie.isChecked) {
+                bagietka.visibility = View.GONE
+                croissant.visibility = View.GONE
+                chleb.visibility = View.GONE
+
+                szynka.visibility = View.GONE
+                salami.visibility = View.GONE
+                kielbasa.visibility = View.GONE
+
+                Ziemniak.visibility = View.GONE
+                Marchewka.visibility = View.GONE
+                Kukurydza.visibility = View.GONE
+                Salata.visibility = View.GONE
+            }
+        }
     }
 }
