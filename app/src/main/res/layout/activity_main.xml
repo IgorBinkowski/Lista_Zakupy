@@ -6,24 +6,124 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sklep"
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/Pieczywo"
+        android:layout_width="132dp"
+        android:layout_height="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintVertical_bias="0.226">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/bagietka"
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Bagietka" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/croissant"
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Croissant" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chleb"
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Chleb" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/Wedliny"
+        android:layout_width="130dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/szynka"
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Szynka" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/salami"
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Salami" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/kielbasa"
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Kielbasa" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/Warzywa"
+        android:layout_width="125dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ziemniak"
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Ziemniak"
+            app:checkedIconVisible="true"
+            app:closeIconVisible="false" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/marchewka"
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Marchewka" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/kukurydza"
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="Kukurydza"
+            app:checkedIconVisible="true" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/salata"
+            android:layout_width="325px"
+            android:layout_height="wrap_content"
+            android:text="Salata" />
+    </com.google.android.material.chip.ChipGroup>
 
     <RadioGroup
-        android:layout_width="157dp"
-        android:layout_height="98dp"
+        android:id="@+id/Wybierz"
+        android:layout_width="160dp"
+        android:layout_height="97dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103">
+        app:layout_constraintVertical_bias="0.057">
 
         <RadioButton
             android:id="@+id/dodawanie"
@@ -38,36 +138,14 @@
             android:text="Odhaczanie" />
     </RadioGroup>
 
-    <com.google.android.material.chip.ChipGroup
-        android:layout_width="132dp"
-        android:layout_height="144dp"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sklep"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.025"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327">
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/bagietka"
-            android:layout_width="350px"
-            android:layout_height="wrap_content"
-            android:checkable="true"
-            android:text="Bagietka" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/croissant"
-            android:layout_width="350px"
-            android:layout_height="wrap_content"
-            android:checkable="true"
-            android:text="Croissant" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/chleb"
-            android:layout_width="350px"
-            android:layout_height="wrap_content"
-            android:checkable="true"
-            android:text="Chleb" />
-    </com.google.android.material.chip.ChipGroup>
+        app:layout_constraintVertical_bias="0.022" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
