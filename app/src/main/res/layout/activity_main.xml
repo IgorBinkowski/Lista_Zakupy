@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#0017AC"
     tools:context=".MainActivity">
 
     <com.google.android.material.chip.ChipGroup
@@ -13,14 +13,14 @@
         android:layout_height="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.226">
+        app:layout_constraintVertical_bias="0.308">
 
         <com.google.android.material.chip.Chip
             android:id="@+id/bagietka"
-            android:layout_width="325px"
+            android:layout_width="345px"
             android:layout_height="wrap_content"
             android:buttonTint="#673AB7"
             android:checkable="true"
@@ -31,7 +31,7 @@
 
         <com.google.android.material.chip.Chip
             android:id="@+id/croissant"
-            android:layout_width="325px"
+            android:layout_width="345px"
             android:layout_height="wrap_content"
             android:checkable="true"
             android:text="Croissant"
@@ -39,7 +39,7 @@
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chleb"
-            android:layout_width="325px"
+            android:layout_width="345px"
             android:layout_height="wrap_content"
             android:checkable="true"
             android:text="Chleb"
@@ -52,22 +52,24 @@
         android:layout_height="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499">
+        app:layout_constraintVertical_bias="0.606">
 
         <com.google.android.material.chip.Chip
             android:id="@+id/szynka"
-            android:layout_width="325px"
+            android:layout_width="345px"
             android:layout_height="wrap_content"
             android:checkable="true"
+            android:fontFamily="sans-serif"
             android:text="Szynka"
+            android:textAllCaps="false"
             app:chipSurfaceColor="@android:color/holo_red_light" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/salami"
-            android:layout_width="325px"
+            android:layout_width="345px"
             android:layout_height="wrap_content"
             android:checkable="true"
             android:text="Salami"
@@ -75,27 +77,27 @@
 
         <com.google.android.material.chip.Chip
             android:id="@+id/kielbasa"
-            android:layout_width="325px"
+            android:layout_width="345px"
             android:layout_height="wrap_content"
             android:checkable="true"
-            android:text="Kielbasa"
+            android:text="Kiełbasa"
             app:chipSurfaceColor="@android:color/holo_red_light" />
     </com.google.android.material.chip.ChipGroup>
 
     <com.google.android.material.chip.ChipGroup
         android:id="@+id/Warzywa"
-        android:layout_width="125dp"
-        android:layout_height="220dp"
+        android:layout_width="130dp"
+        android:layout_height="183dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.884">
+        app:layout_constraintVertical_bias="0.979">
 
         <com.google.android.material.chip.Chip
             android:id="@+id/ziemniak"
-            android:layout_width="325px"
+            android:layout_width="345px"
             android:layout_height="wrap_content"
             android:checkable="true"
             android:text="Ziemniak"
@@ -105,7 +107,7 @@
 
         <com.google.android.material.chip.Chip
             android:id="@+id/marchewka"
-            android:layout_width="325px"
+            android:layout_width="345px"
             android:layout_height="wrap_content"
             android:checkable="true"
             android:text="Marchewka"
@@ -113,7 +115,7 @@
 
         <com.google.android.material.chip.Chip
             android:id="@+id/kukurydza"
-            android:layout_width="325px"
+            android:layout_width="345px"
             android:layout_height="wrap_content"
             android:checkable="true"
             android:text="Kukurydza"
@@ -122,46 +124,112 @@
 
         <com.google.android.material.chip.Chip
             android:id="@+id/salata"
-            android:layout_width="325px"
+            android:layout_width="345px"
             android:layout_height="wrap_content"
             android:checkable="true"
-            android:text="Salata"
+            android:text="Sałata"
             app:chipSurfaceColor="@android:color/holo_green_light" />
     </com.google.android.material.chip.ChipGroup>
 
     <RadioGroup
         android:id="@+id/Wybierz"
-        android:layout_width="160dp"
-        android:layout_height="97dp"
+        android:layout_width="165dp"
+        android:layout_height="105dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057">
+        app:layout_constraintVertical_bias="0.071">
 
         <RadioButton
             android:id="@+id/dodawanie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Dodawanie" />
+            android:fontFamily="cursive"
+            android:text="Dodawanie"
+            android:textAllCaps="true"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/odhaczanie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Odhaczanie" />
+            android:fontFamily="cursive"
+            android:text="Odhaczanie"
+            android:textAllCaps="true"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </RadioGroup>
 
     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:fontFamily="cursive"
+        android:text="Sklep"
+        android:textAllCaps="true"
+        android:textColor="@color/teal_200"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sklep"
+        android:fontFamily="cursive"
+        android:text="Pieczywo"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Wedliny"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Warzywa"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.723" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
