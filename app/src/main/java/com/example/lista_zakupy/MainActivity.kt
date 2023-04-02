@@ -15,12 +15,11 @@ class MainActivity : AppCompatActivity() {
 
        val dodawanie=findViewById<RadioButton>(R.id.dodawanie)
         val odhacznie=findViewById<RadioButton>(R.id.odhaczanie)
-
-       val bagietka = findViewById<Chip>(R.id.ziemniak)
+       val bagietka = findViewById<Chip>(R.id.bagietka)
         bagietka.visibility = View.GONE
-        val croissant = findViewById<Chip>(R.id.salami)
+        val croissant = findViewById<Chip>(R.id.croissant)
         croissant.visibility = View.GONE
-        val chleb =findViewById<Chip>(R.id.kielbasa)
+        val chleb =findViewById<Chip>(R.id.chleb)
         chleb.visibility = View.GONE
 
         val szynka = findViewById<Chip>(R.id.szynka)
@@ -56,20 +55,55 @@ class MainActivity : AppCompatActivity() {
         }
         }
         odhacznie.setOnClickListener(){
-            if (dodawanie.isChecked) {
-                bagietka.visibility = View.GONE
-                croissant.visibility = View.GONE
-                chleb.visibility = View.GONE
-
-                szynka.visibility = View.GONE
-                salami.visibility = View.GONE
-                kielbasa.visibility = View.GONE
-
-                Ziemniak.visibility = View.GONE
-                Marchewka.visibility = View.GONE
-                Kukurydza.visibility = View.GONE
-                Salata.visibility = View.GONE
+            if (bagietka.isChecked) {
+                bagietka.visibility = View.VISIBLE
             }
+            else{bagietka.visibility=View.GONE}
+
+            if (croissant.isChecked) {
+                croissant.visibility = View.VISIBLE
+            }
+            else{croissant.visibility=View.GONE}
+
+            if (chleb.isChecked) {
+                chleb.visibility = View.VISIBLE
+            }
+            else{chleb.visibility=View.GONE}
+
+            if (szynka.isChecked) {
+                szynka.visibility = View.VISIBLE
+            }
+            else{szynka.visibility=View.GONE}
+
+            if (salami.isChecked) {
+                salami.visibility = View.VISIBLE
+            }
+            else{salami.visibility=View.GONE}
+
+            if (kielbasa.isChecked) {
+                kielbasa.visibility = View.VISIBLE
+            }
+            else{kielbasa.visibility=View.GONE}
+
+            if (Ziemniak.isChecked) {
+                Ziemniak.visibility = View.VISIBLE
+            }
+            else{Ziemniak.visibility=View.GONE}
+
+            if (Marchewka.isChecked) {
+                Marchewka.visibility = View.VISIBLE
+            }
+            else{Marchewka.visibility=View.GONE}
+
+            if (Kukurydza.isChecked) {
+                Kukurydza.visibility = View.VISIBLE
+            }
+            else{Kukurydza.visibility=View.GONE}
+
+            if (Salata.isChecked) {
+                Salata.visibility = View.VISIBLE
+            }
+            else{Salata.visibility=View.GONE}
         }
     }
 }

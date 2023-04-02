@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <com.google.android.material.chip.ChipGroup
@@ -21,22 +22,28 @@
             android:id="@+id/bagietka"
             android:layout_width="325px"
             android:layout_height="wrap_content"
+            android:buttonTint="#673AB7"
             android:checkable="true"
-            android:text="Bagietka" />
+            android:text="Bagietka"
+            app:checkedIconTint="#FFEB3B"
+            app:chipIconTint="#FFEB3B"
+            app:chipSurfaceColor="@android:color/holo_orange_light" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/croissant"
             android:layout_width="325px"
             android:layout_height="wrap_content"
             android:checkable="true"
-            android:text="Croissant" />
+            android:text="Croissant"
+            app:chipSurfaceColor="@android:color/holo_orange_light" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chleb"
             android:layout_width="325px"
             android:layout_height="wrap_content"
             android:checkable="true"
-            android:text="Chleb" />
+            android:text="Chleb"
+            app:chipSurfaceColor="@android:color/holo_orange_light" />
     </com.google.android.material.chip.ChipGroup>
 
     <com.google.android.material.chip.ChipGroup
@@ -55,21 +62,24 @@
             android:layout_width="325px"
             android:layout_height="wrap_content"
             android:checkable="true"
-            android:text="Szynka" />
+            android:text="Szynka"
+            app:chipSurfaceColor="@android:color/holo_red_light" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/salami"
             android:layout_width="325px"
             android:layout_height="wrap_content"
             android:checkable="true"
-            android:text="Salami" />
+            android:text="Salami"
+            app:chipSurfaceColor="@android:color/holo_red_light" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/kielbasa"
             android:layout_width="325px"
             android:layout_height="wrap_content"
             android:checkable="true"
-            android:text="Kielbasa" />
+            android:text="Kielbasa"
+            app:chipSurfaceColor="@android:color/holo_red_light" />
     </com.google.android.material.chip.ChipGroup>
 
     <com.google.android.material.chip.ChipGroup
@@ -90,6 +100,7 @@
             android:checkable="true"
             android:text="Ziemniak"
             app:checkedIconVisible="true"
+            app:chipSurfaceColor="@android:color/holo_green_light"
             app:closeIconVisible="false" />
 
         <com.google.android.material.chip.Chip
@@ -97,7 +108,8 @@
             android:layout_width="325px"
             android:layout_height="wrap_content"
             android:checkable="true"
-            android:text="Marchewka" />
+            android:text="Marchewka"
+            app:chipSurfaceColor="@android:color/holo_green_light" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/kukurydza"
@@ -105,13 +117,16 @@
             android:layout_height="wrap_content"
             android:checkable="true"
             android:text="Kukurydza"
-            app:checkedIconVisible="true" />
+            app:checkedIconVisible="true"
+            app:chipSurfaceColor="@android:color/holo_green_light" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/salata"
             android:layout_width="325px"
             android:layout_height="wrap_content"
-            android:text="Salata" />
+            android:checkable="true"
+            android:text="Salata"
+            app:chipSurfaceColor="@android:color/holo_green_light" />
     </com.google.android.material.chip.ChipGroup>
 
     <RadioGroup
@@ -129,6 +144,7 @@
             android:id="@+id/dodawanie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="false"
             android:text="Dodawanie" />
 
         <RadioButton
