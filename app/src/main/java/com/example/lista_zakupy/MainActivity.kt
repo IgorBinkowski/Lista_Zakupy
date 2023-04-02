@@ -66,6 +66,11 @@ class MainActivity : AppCompatActivity() {
         }
         }
         odhacznie.setOnClickListener(){
+            if (bagietka.isChecked or croissant.isChecked or chleb.isChecked) {
+                pieczywo.visibility = View.VISIBLE
+            }
+            else{pieczywo.visibility=View.GONE}
+
             if (bagietka.isChecked) {
                 bagietka.visibility = View.VISIBLE
             }
@@ -81,6 +86,11 @@ class MainActivity : AppCompatActivity() {
             }
             else{chleb.visibility=View.GONE}
 
+            if (szynka.isChecked or salami.isChecked or kielbasa.isChecked) {
+                wedliny.visibility = View.VISIBLE
+            }
+            else{wedliny.visibility=View.GONE}
+
             if (szynka.isChecked) {
                 szynka.visibility = View.VISIBLE
             }
@@ -95,6 +105,11 @@ class MainActivity : AppCompatActivity() {
                 kielbasa.visibility = View.VISIBLE
             }
             else{kielbasa.visibility=View.GONE}
+
+            if (Ziemniak.isChecked or Marchewka.isChecked or Kukurydza.isChecked or Salata.isChecked) {
+                warzywa.visibility = View.VISIBLE
+            }
+            else{warzywa.visibility=View.GONE}
 
             if (Ziemniak.isChecked) {
                 Ziemniak.visibility = View.VISIBLE
